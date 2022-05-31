@@ -3,7 +3,9 @@ import React from 'react';
 const Header = () => {
     return (
         <div>
-            Header
+            <header>
+                <a href="/">Shopping cart</a>
+            </header>
         </div>
     );
 };

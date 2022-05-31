@@ -3,7 +3,9 @@ import React from 'react';
 const Main = () => {
     return (
         <div>
-            main
+            <main>
+                Product List
+            </main>
         </div>
     );
 };
