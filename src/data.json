@@ -6,7 +6,7 @@
             "title": "TURO's Budapest",
             "description": "TURO's Budapest costume cat has a modern fit cut. The jacket has pockets with flaps and a chest pocket, four decorative buttons on the cuffs and two slits on the back hem.",
             "price": 10,
-            "availableSizes": ["X", "L", "XL", "XXL"]
+            "availableSizes": ["XS", "L", "XL", "XXL"]
         },
         {
             "_id": "dress2",
@@ -38,7 +38,7 @@
             "title": "Midi sundress with shirring detail",
             "description": "about the dress 5",
             "price": 50,
-            "availableSizes": ["X", "L", "XL", "XXL"]
+            "availableSizes": ["XS", "L", "XL", "XXL"]
         },
         {
             "_id": "dress6",

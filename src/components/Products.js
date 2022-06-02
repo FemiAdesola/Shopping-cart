@@ -13,7 +13,7 @@ const Products = ({products}) => {
                         </a>
                         <div className="product-price">
                       <div>{FormatCurrency (product.price)}</div>
-                      <button className="button primary">
+                      <button  className="button primary">
                         Add To Cart
                       </button>
                     </div>
