@@ -136,7 +136,7 @@ footer {
 }
 
 /* Filter */
-/* .filter {
+.filter {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -145,7 +145,8 @@ footer {
 }
 .filter div {
   flex: 1;
-} */
+}
+
 /* Index.css */
 /* .cart {
   padding: 1rem;
