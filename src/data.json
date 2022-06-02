@@ -2,31 +2,31 @@
     "products":[
         {
             "_id": "dress1",
-            "image": "/images/dress1.jpg",
-            "title": "Midi sundress with shirring detail",
-            "description": "about the dress 1",
+            "image": "/img/dress1.png",
+            "title": "TURO's Budapest",
+            "description": "TURO's Budapest costume cat has a modern fit cut. The jacket has pockets with flaps and a chest pocket, four decorative buttons on the cuffs and two slits on the back hem.",
             "price": 10,
             "availableSizes": ["X", "L", "XL", "XXL"]
         },
         {
             "_id": "dress2",
-            "image": "/images/dress2.jpg",
-            "title": "Midi sundress with shirring detail",
-            "description": "about the dress 2",
+            "image": "/img/dress2.png",
+            "title": "The classically elegant suit",
+            "description": "The classically elegant suit is made of comfortable wool and mohair. The suit jacket has a chest pocket and two pockets with flaps. The back has slits. The suit jacket is closed with two buttons, the cuffs have decorative buttons. Inside there is a blue, glossy lined fabric and three pockets.",
             "price": 20,
             "availableSizes": ["X", "L", "XL", "XXL"]
         },
         {
             "_id": "dress3",
-            "image": "/images/dress3.jpg",
-            "title": "Midi sundress with shirring detail",
-            "description": "about the dress 3",
+            "image": "/img/dress3.png",
+            "title": "Tiger of Sweden's narrow-lined suit jacket ",
+            "description": "Tiger of Sweden's narrow-lined suit jacket has a single-row buttoning, a lightly supported shoulder line and a narrow notched collar with two buttonholes. There is a chest pocket on the front and button-through pockets with lids, a smooth lining and three chest pockets on the inside. The hem has two slits at the back and decorative buttons at the cuffs.",
             "price": 30,
             "availableSizes": ["X", "L", "XL", "XXL"]
         },
         {
             "_id": "dress4",
-            "image": "/images/dress4.jpg",
+            "image": "/img/dress4.jpg",
             "title": "Midi sundress with shirring detail",
             "description": "about the dress 4",
             "price": 40,
@@ -34,7 +34,7 @@
         },
         {
             "_id": "dress5",
-            "image": "/images/dress5.jpg",
+            "image": "/img/dress5.jpg",
             "title": "Midi sundress with shirring detail",
             "description": "about the dress 5",
             "price": 50,
@@ -42,7 +42,7 @@
         },
         {
             "_id": "dress6",
-            "image": "/images/dress6.jpg",
+            "image": "/img/dress6.jpg",
             "title": "Midi sundress with shirring detail",
             "description": "about the dress 6",
             "price": 60,
