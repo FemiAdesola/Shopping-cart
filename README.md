@@ -5,3 +5,8 @@
 ```shell
 npm install react-awesome-reveal --save
 ```
+
+- [For modal ](https://www.npmjs.com/package/react-awesome-reveal)
+```shell
+npm install react-awesome-reveal --save
+```

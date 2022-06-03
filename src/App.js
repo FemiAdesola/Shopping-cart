@@ -12,8 +12,10 @@ class App extends Component {
       products: data.products,
       size: "",
       sort: "",
+      product: null,
       cartItems: localStorage.getItem("cartItems") ? JSON.parse(localStorage.getItem("cartItems")):[],
     };
+  
   }
 
   filterProducts = (event) => {
@@ -83,7 +85,7 @@ class App extends Component {
     return (
       <div className="grid-container">
         <header>
-          <a href="/">React Shopping Cart</a>
+          <a href="/">eCommerce</a>
         </header>
         <main>
           <div className="content">
@@ -106,7 +108,7 @@ class App extends Component {
             </div>
           </div>
         </main>
-        <footer>All right is reserved.</footer>
+        <footer>Femi Adesola</footer>
       </div>
     );
   }
