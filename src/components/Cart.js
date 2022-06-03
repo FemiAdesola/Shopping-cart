@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import FormatCurrency from '../util';
+import Form from './Form';
 
-const Cart = ({cartItems, removeFromCart}) => {
+const Cart = ({cartItems, removeFromCart, createOrder, handleInput}) => {
+    const [showCheckout, setCheckout]= useState(false);
     return (
         <div>
         {cartItems.length === 0 ? (
@@ -38,16 +40,22 @@ const Cart = ({cartItems, removeFromCart}) => {
             </ul>
           </div>
           {cartItems.length !== 0 && (
-            <div className="cart">
-              <div className="total">
-                <div>
-                  Total:{" "}
-                  {FormatCurrency(
-                    cartItems.reduce((a, currentValue) => a + currentValue.price * currentValue.count, 0)
-                  )}
+            <div>
+                <div className="cart">
+                <div className="total">
+                    <div>
+                    Total:{" "}
+                    {FormatCurrency(
+                        cartItems.reduce((a, currentValue) => a + currentValue.price * currentValue.count, 0)
+                    )}
+                    </div>
+                    <button onClick={()=>(setCheckout({showCheckout:true}))} className="button primary">Continue</button>
                 </div>
-                <button className="button primary">Continue</button>
-              </div>
+                </div>
+                {showCheckout && (
+                <Form createOrder={createOrder} handleInput={handleInput}/>
+                )
+                }
             </div>
           )}
         </div>

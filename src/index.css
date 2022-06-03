@@ -151,7 +151,6 @@ footer {
 .cart {
   padding: 1rem;
   margin: 12px;
-  width: 80%;
 }
 .cart-header {
   border-bottom: 1px #c0c0c0 solid;
@@ -216,7 +215,7 @@ margin-top: 10px;
 }
 
 /* Checkout form */
-/* form {
+form {
   width: 100%;
 }
 .form-container {
@@ -232,7 +231,7 @@ margin-top: 10px;
 input {
   padding: 1rem;
   border: 0.1rem #c0c0c0 solid;
-} */
+} 
 /* Product Details */
 /* .product-details {
   display: flex;
@@ -254,7 +253,7 @@ input {
   right: 1rem;
   top: 2.5rem;
   z-index: 1000;
-} */
+}
 
 /* Order Details */
 /* 
