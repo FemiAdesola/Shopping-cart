@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import FormatCurrency from '../util';
 import Form from './Form';
+import { Fade } from 'react-awesome-reveal';
 
 const Cart = ({cartItems, removeFromCart, createOrder, handleInput}) => {
     const [showCheckout, setCheckout]= useState(false);
@@ -15,6 +16,7 @@ const Cart = ({cartItems, removeFromCart, createOrder, handleInput}) => {
         )}
         <div>
           <div className="cart">
+            <Fade cascade direction="left">
             <ul className="cart-items">
               {cartItems.map((item) => (
                 <li key={item._id}>
@@ -38,6 +40,7 @@ const Cart = ({cartItems, removeFromCart, createOrder, handleInput}) => {
                 </li>
               ))}
             </ul>
+            </Fade>
           </div>
           {cartItems.length !== 0 && (
             <div>

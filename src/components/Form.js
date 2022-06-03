@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Fade } from 'react-awesome-reveal';
 
 export default class Form extends Component {
     constructor(props) {
@@ -27,6 +28,7 @@ export default class Form extends Component {
 
   render() {
     return (
+        <Fade cascade direction="right">
         <div className="cart">
             <form onSubmit={this.createOrder}>
                 <ul className="form-container">
@@ -65,6 +67,7 @@ export default class Form extends Component {
                 </ul>
             </form>
         </div>
+        </Fade>
     );
   }
 }

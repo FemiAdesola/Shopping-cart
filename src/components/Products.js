@@ -1,9 +1,11 @@
 import React from 'react';
 import FormatCurrency from '../util';
+import { Fade } from 'react-awesome-reveal';
 
 const Products = ({products, addToCart}) => {
     return (
         <div>
+            <Fade direction="up" cascade>
             <ul className="products">
                 {products.length? (products.map(product =>(<li key={product._id}>
                     <div className='product'>
@@ -20,6 +22,7 @@ const Products = ({products, addToCart}) => {
                     </div>
                 </li>))):(null)}
             </ul>
+            </Fade>
         </div>
     );
 };
