@@ -21,6 +21,10 @@ body-parse mongoose shortid
 ```
 
 
+```shell
+npm install redux react-redux react-thunk
+```
+
 
 ## Runing server
 

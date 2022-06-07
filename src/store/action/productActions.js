@@ -1,0 +1,12 @@
+import { FETCH_PRODUCTS } from "../type";
+
+export const fetchProducts = () => async (dispatch) => {
+  const res = await fetch("/api/products");
+  // data needs to be converted to Json
+  const data = await res.json();
+  console.log(data);
+  dispatch({
+    type: FETCH_PRODUCTS,
+    payload: data,
+  });
+};

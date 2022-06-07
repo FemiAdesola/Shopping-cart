@@ -3,6 +3,10 @@ import FormatCurrency from '../util';
 import { Fade, Slide } from 'react-awesome-reveal';
 import Modal from 'react-modal';
 
+// REDUX
+import { connect } from 'react-redux';
+import { fetchProducts } from '../store/action/productActions';
+
 
 class Products extends Component {
     constructor(props) {
@@ -14,14 +18,25 @@ class Products extends Component {
     openModal = (product) => {
       this.setState({ product });
     };
+
+    // to fetch the data from api
+    componentDidMount(){
+        this.props.fetchProducts()
+    }
+
+    // for closing modal 
     closeModal = () => {
       this.setState({ product: null });
     };
+
     render() {
       const { product } = this.state;
       return (
         <div>
           <Fade bottom cascade>
+              {!this.props.products ? <div>Loading....</div> :
+              
+             
             <ul className="products">
               {this.props.products.map((product) => (
                 <li key={product._id}>
@@ -46,6 +61,7 @@ class Products extends Component {
                 </li>
               ))}
             </ul>
+             }
           </Fade>
           {product && (
             <Modal isOpen={true} onRequestClose={this.closeModal}>
@@ -91,4 +107,6 @@ class Products extends Component {
     }
   }
 
-  export default Products;
+
+// inform come from reducer
+export default connect((state)=>({products:state.products.itemsProduct}), {fetchProducts})(Products);
