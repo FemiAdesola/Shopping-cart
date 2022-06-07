@@ -10,3 +10,24 @@ npm install react-awesome-reveal --save
 ```shell
 npm install react-awesome-reveal --save
 ```
+
+```shell
+npm install nodemon globally 
+```
+
+```shell
+npm install express 
+body-parse mongoose shortid
+```
+
+
+
+## Runing server
+
+```shell
+npm run server
+```
+
+### Postman
+- [For get](http://localhost:5000/api/products)
+- [for post](http://localhost:5000/api/products)
