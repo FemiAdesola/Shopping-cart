@@ -6,6 +6,7 @@ import Modal from 'react-modal';
 // REDUX
 import { connect } from 'react-redux';
 import { fetchProducts } from '../store/action/productActions';
+import { addToCart } from '../store/action/cartActions';
 
 
 class Products extends Component {
@@ -111,4 +112,7 @@ class Products extends Component {
 // inform come from reducer
 export default connect((state)=>({
     products:state.products.filteredItems
-}), {fetchProducts})(Products);
+}), {
+    fetchProducts, 
+    addToCart
+})(Products);

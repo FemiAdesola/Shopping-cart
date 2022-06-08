@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
+import { connect } from 'react-redux';
 import FormatCurrency from '../util';
 import Form from './Form';
 import { Fade } from 'react-awesome-reveal';
+import { removeFromCart } from '../store/action/cartActions';
 
-const Cart = ({cartItems, removeFromCart, createOrder, handleInput}) => {
+const Cart = ({cartItems,  createOrder, handleInput, removeFromCart}) => {
     const [showCheckout, setCheckout]= useState(false);
     return (
         <div>
@@ -66,4 +68,9 @@ const Cart = ({cartItems, removeFromCart, createOrder, handleInput}) => {
     );
 };
 
-export default Cart;
+export default connect(
+  (state) => ({
+   cartItems:state.cart.cartItems
+  }),
+  {removeFromCart}
+)(Cart);
