@@ -4,9 +4,6 @@ import { productsReducer } from "./reducers/productReducers";
 export const store = configureStore({
     reducer: {
         products: productsReducer,
-     
-
-      
     },
   });
   export default store;

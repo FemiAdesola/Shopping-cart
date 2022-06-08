@@ -109,4 +109,6 @@ class Products extends Component {
 
 
 // inform come from reducer
-export default connect((state)=>({products:state.products.itemsProduct}), {fetchProducts})(Products);
+export default connect((state)=>({
+    products:state.products.filteredItems
+}), {fetchProducts})(Products);

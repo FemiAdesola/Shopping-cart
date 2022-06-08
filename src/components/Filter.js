@@ -1,17 +1,26 @@
 import React from 'react';
+import { connect, useDispatch } from 'react-redux';
+import { 
+    filterProducts,
+    sortProducts
+ } from '../store/action/productActions';
 
 
-const Filter = ({ count, size, sort, filterProducts, sortProducts}) => {
+const Filter = ({ products, size, sort}) => {
+    const dispatch = useDispatch();
     return (
+        !products ?(
+        <div>Loading....</div>
+        ):(
         <div className="filter">
            <div className="filter-result">
-                {count} Products
+                {products.length} Products
             </div>
             <div className="filter-sort">
             Order{" "}
             <select
                 value={sort}
-                onChange={sortProducts}    
+                onChange={(e) => dispatch(sortProducts(products, e.target.value))}    
             >
                 <option value="latest">Latest</option>
                 <option value="lowest">Lowest</option>
@@ -22,7 +31,7 @@ const Filter = ({ count, size, sort, filterProducts, sortProducts}) => {
             Filter {" "}
             <select
                 value={size}
-                onChange={filterProducts}
+                onChange={(e) => dispatch(filterProducts (products, e.target.value))}
             >
                 <option value="">ALL</option>
                 <option value="XS">XS</option>
@@ -34,7 +43,21 @@ const Filter = ({ count, size, sort, filterProducts, sortProducts}) => {
             </select>
             </div>
         </div>
+        )
     );
 };
 
-export default Filter;
+// export default Filter;
+
+export default connect(
+    (state) => ({
+      size: state.products.size,
+      sort: state.products.sort,
+      products: state.products.items,
+      filteredProducts: state.products.filteredItems,
+    }),
+    {
+        filterProducts,
+        sortProducts,
+      }
+  )(Filter);
