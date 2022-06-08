@@ -255,11 +255,43 @@ input {
 .close-modal {
  /* position:absolute; */
   right: 20px;
-  top: 1rem;
+  top: 50px;
   z-index: 1000;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   text-align: center;
   justify-content: center;
+  border: none;
+  font-size: 20px;
+}
+.close-modal:hover{
+  background-color: red;
+  border: none;
+}
+/* Order Details */
+
+.order-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.order-details li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order-details li div {
+  padding: 10px;
+}
+.order-details .items {
+  text-align: right;
+  padding: 0;
+}
+
+.success-message {
+  color: rgb(0, 128, 47);
+  font-size: 30px;
 }

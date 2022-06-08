@@ -1,8 +1,7 @@
 import './App.css';
-import Products from './components/Products';
+import Main from './components/Main';
+
 import React from 'react';
-import Filter from './components/Filter';
-import Cart from './components/Cart';
 
 const App = () => {
     return (
@@ -10,17 +9,7 @@ const App = () => {
         <header>
           <a href="/">eCommerce</a>
         </header>
-        <main>
-          <div className="content">
-            <div className="main">
-              <Filter />
-              <Products />
-            </div>
-            <div className="sidebar">
-              <Cart />
-            </div>
-          </div>
-        </main>
+        <Main/>
         <footer>Femi Adesola</footer>
       </div>
     );
