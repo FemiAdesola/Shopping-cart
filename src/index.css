@@ -13,7 +13,6 @@ html {
 body,
 #root {
   height: 100vh;
-  margin: 0;
 }
 body,
 input,
@@ -45,9 +44,10 @@ header {
   background-color: #203040;
   color: #ffffff;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 50px;
+  padding: 50px;
 }
 header a {
   color: #ffffff;
@@ -139,8 +139,9 @@ footer {
 .filter {
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 2rem;
   margin: 1rem;
+  margin-left: 50px;
   border-bottom: 0.1rem #c0c0c0 solid;
 }
 .filter div {
@@ -269,8 +270,9 @@ input {
   background-color: red;
   border: none;
 }
-/* Order Details */
 
+
+/* Order Details */
 .order-details {
   display: flex;
   flex-direction: column;
@@ -294,4 +296,23 @@ input {
 .success-message {
   color: rgb(0, 128, 47);
   font-size: 30px;
+}
+
+/* Orders */
+.orders {
+  padding: 50px;
+  margin-left: 100px;
+}
+.order-list{
+  margin-bottom: 30px;
+  text-align: center;
+}
+tbody > tr:nth-child(odd) {
+  background-color: #eee1e1;
+}
+td {
+  padding: 30px;
+}
+th {
+  text-align: center;
 }
