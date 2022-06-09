@@ -7,11 +7,13 @@ const app = express();
 app.use(bodyParser.json());
 
 // // for deploying 
-// app.use("/", express.static(__dirname + "/build"));
-// app.get("/", (req, res)=>res.sendFile(__dirname + "/build(index.html"))
+app.use("/", express.static(__dirname + "/build"));
+app.get("/", (req, res)=>res.sendFile(__dirname + "/build/index.html"))
 
 // mongodb database connection 
-mongoose.connect("mongodb://localhost/shopping-cart-db", {
+mongoose.connect(
+  process.env.MONGODB_URL ||
+  "mongodb://localhost/shopping-cart-db", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
