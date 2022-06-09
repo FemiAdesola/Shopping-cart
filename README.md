@@ -1,14 +1,30 @@
-# React Shopping chart with Redux
+# React Shopping cart with Redux
 
+This is a shopping cart app where users can order products through  an online service.
+The users can filter the product based on the available size, highest and lowest price. By clicking on Proceed on the left side after adding a product to the cart, the order form will pop up, requested from the user's information. Also, by clicking checkout order will store on the admin page.
+
+![Shoppingcart](/img/ShoppingCart.png)
+
+---
+ ## Used technologies: 
+- React, 
+- React Redux,
+- [Heroku](https://www.heroku.com)
+- [MongoDB](https://www.mongodb.com/)
+- [Postman](https://www.postman.com/)
+- react-awesome-reveal
+- react-modal
+
+---
 ## Installation 
 - [For animation ](https://www.npmjs.com/package/react-awesome-reveal)
 ```shell
 npm install react-awesome-reveal --save
 ```
 
-- [For modal ](https://www.npmjs.com/package/react-awesome-reveal)
+- [For modal ](https://www.npmjs.com/package/react-modal)
 ```shell
-npm install react-awesome-reveal --save
+npm install react-modal
 ```
 
 ```shell
@@ -25,7 +41,7 @@ body-parse mongoose shortid
 npm install redux react-redux react-thunk
 ```
 
-
+---
 ## Runing server
 
 ```shell
@@ -147,6 +163,6 @@ app.get("/", (req, res)=>res.sendFile(__dirname + "/build(index.html"))
             ![MongoHeroko](/img/MongoHeroku.png)
 
             - Then add NODE_MODULES_CACHE and set value to false
-            
+
             ![Node_nodule_cache](/img/NodeModule.png)
 
