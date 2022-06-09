@@ -166,3 +166,10 @@ app.get("/", (req, res)=>res.sendFile(__dirname + "/build(index.html"))
 
             ![Node_nodule_cache](/img/NodeModule.png)
 
+## Web for this package
+- https://femi-shopping-cart.herokuapp.com/
+
+---
+
+## Acknowledgement 
+- Bassir Jafarzadeh (INSTRUCTOR)
